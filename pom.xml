@@ -14,6 +14,10 @@
 
 	<modules>
 		<module>internet-banking-config-service</module>
+		<module>internet-banking-discovery-service</module>
+		<module>internet-banking-gateway-service</module>
+		<module>internet-banking-employee-service</module>
+		<module>internet-banking-organization-service</module>
 	</modules>
 	
 </project>
