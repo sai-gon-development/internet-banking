@@ -1,0 +1,57 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "1 Config Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.config.ConfigApplication",
+      "projectName": "internet-banking-config-service"
+    },
+    {
+      "type": "java",
+      "name": "2 Discovery Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.discovery.DiscoveryApplication",
+      "projectName": "internet-banking-discovery-service"
+    },
+    {
+      "type": "java",
+      "name": "3 Gateway Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.gateway.GatewayApplication",
+      "projectName": "internet-banking-gateway-service"
+    },
+    {
+      "type": "java",
+      "name": "4 Department Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.department.DepartmentApplication",
+      "projectName": "internet-banking-department-service"
+    },
+    {
+      "type": "java",
+      "name": "5 Employee Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.employee.EmployeeApplication",
+      "projectName": "internet-banking-employee-service"
+    },
+    
+    {
+      "type": "java",
+      "name": "6 Organization Application",
+      "request": "launch",
+      "mainClass": "pl.piomin.services.organization.OrganizationApplication",
+      "projectName": "internet-banking-organization-service"
+    }
+  ]
+}
