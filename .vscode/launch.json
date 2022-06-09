@@ -26,6 +26,22 @@
     },
     {
       "type": "java",
+      "name": "2B Discovery Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.discovery.DiscoveryApplication",
+      "projectName": "internet-banking-discovery-service",
+      "args": "--spring.profiles.active=localhost"
+    },
+    {
+      "type": "java",
+      "name": "2C Discovery Application",
+      "request": "launch",
+      "mainClass": "com.saigon.services.discovery.DiscoveryApplication",
+      "projectName": "internet-banking-discovery-service",
+      "args": "--spring.profiles.active=localhost"
+    },
+    {
+      "type": "java",
       "name": "3 Gateway Application",
       "request": "launch",
       "mainClass": "com.saigon.services.gateway.GatewayApplication",

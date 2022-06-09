@@ -1,9 +1,93 @@
 server:
   port: 8061
 
+management:
+  endpoints: 
+    web:
+      exposure: 
+        include: "health, info"
+  info:
+    java:
+      enabled: true
+    env:
+      enabled: true
+
+info:
+  application: eureka-server
+
+spring:
+  security:
+    user:
+      name: richard
+      password: richard
+  application:
+    name: eureka-server
+  cloud:
+    loadbalancer:
+      cache:
+        ttl: 35
+  cache:
+    cache-names: eureka-server
+  devtools:
+    restart:
+      enabled: true
+
 eureka:
+  datacenter: Default
+  environment: Default
   instance:
     hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+--- 
+spring:
+  config:
+    activate:
+      on-profile:
+      - localhost
+eureka:
+  datacenter: Localhost
+  environment: Localhost
+  instance:
+    hostname: localhost
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - development
+eureka:
+  datacenter: Development
+  environment: Development
+  instance:
+    hostname: richardvu.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+---
+spring:
+  config:
+    activate:
+      on-profile:
+      - production
+eureka:
+  datacenter: Production
+  environment: Production
+  instance:
+    hostname: richardvu.com
   client:
     registerWithEureka: false
     fetchRegistry: false
