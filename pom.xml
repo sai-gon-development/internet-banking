@@ -1,18 +1,24 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	
-	<groupId>com.saigon.development</groupId>
+
+	<groupId>com.saigon.services</groupId>
 	<artifactId>internet-banking</artifactId>
 	<version>1.0.0</version>
 	<packaging>pom</packaging>
-
+	
 	<properties>
 		<sonar.organization>sai-gon-development</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
 	</properties>
 
 	<modules>
+		<module>internet-banking-config-service</module>
+		<module>internet-banking-discovery-service</module>
+		<module>internet-banking-gateway-service</module>
+		<module>internet-banking-employee-service</module>
+		<module>internet-banking-department-service</module>
+		<module>internet-banking-organization-service</module>
 	</modules>
 	
 </project>
