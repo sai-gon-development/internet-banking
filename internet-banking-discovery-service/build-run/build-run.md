@@ -15,7 +15,7 @@ java -jar internet-banking-discovery-service-1.0.0.jar --spring.profiles.active=
 docker build -t internet-banking-discovery-service:1.0.0 -f Dockerfile .
 
 ### Run
-docker run -it --name internet-banking-discovery-service -p 8020:8060 -e SPRING_PROFILES_ACTIVE=localhost internet-banking-discovery-service:1.0.0
+docker run -it --name internet-banking-discovery-service -p 8020:8061 -e SPRING_PROFILES_ACTIVE=localhost internet-banking-discovery-service:1.0.0
 
 #### SPRING_PROFILES_ACTIVE (env)
 localhost, development, production
